@@ -1,0 +1,67 @@
+/* Custom styles for SDG Marketplace */
+
+:root {
+    --sdg-green: #4c9f38;
+    --sdg-blue: #00558b;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    transition: transform 0.2s;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 0.5em 1em;
+}
+
+.btn-success {
+    background-color: var(--sdg-green);
+    border-color: var(--sdg-green);
+}
+
+.btn-success:hover {
+    background-color: darken(var(--sdg-green), 10%);
+    border-color: darken(var(--sdg-green), 10%);
+}
+
+.btn-outline-success {
+    color: var(--sdg-green);
+    border-color: var(--sdg-green);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--sdg-green);
+    border-color: var(--sdg-green);
+}
+
+/* SDG badge colors */
+.sdg-1 { background-color: #e5243b; }
+.sdg-13 { background-color: #3f7e44; }
+.sdg-12 { background-color: #bf8b2e; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 1rem;
+    }
+}
